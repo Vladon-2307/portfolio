@@ -51,7 +51,7 @@
     }
 
     &-item{
-
+      width: fit-content;
     }
 
     &-link{
@@ -73,5 +73,8 @@
 @media (hover: hover){
   .header__contacts-item:hover{
     scale: 1.1;
+    border-radius: 10px;
+    background-color: #444444;
+    padding: 2px 5px;
   }
 }

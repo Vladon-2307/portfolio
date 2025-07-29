@@ -3,6 +3,7 @@ import {PreviewComponent} from "../../components/preview/preview.component";
 import {StackComponent} from "../../components/stack/stack.component";
 import {FooterComponent} from "../../components/footer/footer.component";
 import {EducationComponent} from '../../components/education/education.component';
+import {AboutComponent} from '../../components/about/about.component';
 
 @Component({
   selector: 'app-home-page',
@@ -11,7 +12,8 @@ import {EducationComponent} from '../../components/education/education.component
     PreviewComponent,
     EducationComponent,
     StackComponent,
-    FooterComponent
+    FooterComponent,
+    AboutComponent
   ],
   templateUrl: './home.page.component.html',
   styleUrl: './home.page.component.scss'
