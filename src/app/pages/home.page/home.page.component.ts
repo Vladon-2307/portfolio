@@ -4,6 +4,7 @@ import {StackComponent} from "../../components/stack/stack.component";
 import {FooterComponent} from "../../components/footer/footer.component";
 import {EducationComponent} from '../../components/education/education.component';
 import {AboutComponent} from '../../components/about/about.component';
+import {ExperienceComponent} from '../../components/experience/experience.component';
 
 @Component({
   selector: 'app-home-page',
@@ -13,7 +14,8 @@ import {AboutComponent} from '../../components/about/about.component';
     EducationComponent,
     StackComponent,
     FooterComponent,
-    AboutComponent
+    AboutComponent,
+    ExperienceComponent
   ],
   templateUrl: './home.page.component.html',
   styleUrl: './home.page.component.scss'

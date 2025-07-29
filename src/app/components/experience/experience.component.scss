@@ -1,0 +1,51 @@
+.experience {
+  max-width: 1200px;
+  margin-top: 30px;
+  margin-inline: auto;
+  padding: 0 20px;
+  justify-content: center;
+
+  &__title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+  }
+
+  &__block{
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: #444444;
+    padding: 10px 15px;
+  }
+}
+
+.experience__block {
+  &-org{
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  &-spec{
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  &-work{
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  &-charge{
+    &__title{
+      font-size: 20px;
+      font-weight: 600;
+    }
+    &__list{
+      margin-left: 15px;
+    }
+    &__item{
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+}
