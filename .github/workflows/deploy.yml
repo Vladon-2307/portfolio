@@ -8,8 +8,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: npm ci
-      - run: npm run build -- --configuration=production --base-href="portfolio"
+      - run: npm run build --configuration=production
       - uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist/portfolio
+          publish_dir: ./dist/portfolio/browser
