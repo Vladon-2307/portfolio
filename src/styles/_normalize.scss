@@ -1,0 +1,138 @@
+/**
+ * Reset.scss
+ * Полный сброс стилей для кросс-браузерной разработки
+ * Версия: 1.0.0
+ */
+
+/* ==========================================================================
+   Базовый сброс
+   ========================================================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box; // Единый box model для всех элементов
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth; // Плавная прокрутка
+  height: 100%;
+  -webkit-text-size-adjust: 100%; // Фикс для iOS
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ==========================================================================
+   Удаление стандартных стилей
+   ========================================================================== */
+
+// Сброс для списков
+ul, ol {
+  list-style: none;
+}
+
+// Сброс для ссылок
+a {
+  color: inherit;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+// Сброс для кнопок и инпутов
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  appearance: none;
+}
+
+// Удаление стрелок у number input
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+// Сброс для изображений
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+// Сброс для таблиц
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+// Сброс для форм
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+// Сброс для textarea
+textarea {
+  resize: vertical;
+  overflow: auto;
+  vertical-align: top;
+}
+
+/* ==========================================================================
+   Удаление анимаций для пользователей с настройками reduced motion
+   ========================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ==========================================================================
+   Вспомогательные сбросы
+   ========================================================================== */
+
+// Удаление стандартного маркера для details/summary
+details > summary {
+  list-style: none;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+// Сброс для iframe
+iframe {
+  border: none;
+}
+
+// Сброс для горизонтальной линии
+hr {
+  height: 1px;
+  border: none;
+  background-color: currentColor;
+  opacity: 0.1;
+}

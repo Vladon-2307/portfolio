@@ -1,0 +1,77 @@
+.header{
+
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  &__left{
+    width: 50%;
+    padding-top: 20px;
+    padding-inline: 20px;
+  }
+
+  &__right{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__title{
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 48px;
+  }
+
+  &__description{
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 24px;
+  }
+
+  &__sub-description{
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  &__photo{
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+    height: 400px;
+  }
+
+  &__contacts{
+    margin-top: 50px;
+    padding-inline: 10px ;
+
+    &-list{
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+    }
+
+    &-item{
+
+    }
+
+    &-link{
+
+      display: flex;
+      column-gap: 5px;
+
+      &__icon{
+
+      }
+
+      &__text{
+
+      }
+    }
+  }
+}
+
+@media (hover: hover){
+  .header__contacts-item:hover{
+    scale: 1.1;
+  }
+}

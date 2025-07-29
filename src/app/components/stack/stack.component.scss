@@ -1,0 +1,43 @@
+.stack{
+  max-width: 1200px;
+  margin-top: 50px;
+  margin-inline: auto;
+
+  &__title{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+  }
+
+  &__sub-title{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  &__list{
+    display: flex;
+    margin-bottom: 20px;
+    width: 100%;
+    flex-wrap: wrap;
+    padding-inline: 30px;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  &__item{
+    font-size: 24px;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: #444444;
+    cursor: pointer;
+  }
+}
+
+@media (hover: hover){
+  .stack__item:hover{
+    scale: 1.2;
+  }
+}

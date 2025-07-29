@@ -1,0 +1,16 @@
+<section class="stack">
+
+  <h1 class="stack__title">Стек</h1>
+  <h3 class="stack__sub-title">Средний уровень</h3>
+  <ul class="stack__list">
+    @for (item of stackS;track $index){
+      <li class="stack__item">{{item}}</li>
+    }
+  </ul>
+  <h3 class="stack__sub-title">Начальный уровень</h3>
+  <ul class="stack__list">
+    @for (item of stackN;track $index){
+      <li class="stack__item">{{item}}</li>
+    }
+  </ul>
+</section>
